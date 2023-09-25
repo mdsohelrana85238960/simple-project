@@ -11,8 +11,9 @@ const allData = useLoaderData();
 
 
     return (
-        <div className="py-16">
+        <div >
             <Banner ></Banner>
+            
             <AllData allData= {allData}></AllData>
 
        

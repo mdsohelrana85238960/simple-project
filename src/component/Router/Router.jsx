@@ -11,11 +11,12 @@ const myCreateRouter = createBrowserRouter([
     {
         path : '/',
         element : <MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children : [
             {
                 path : '/',
                 element :<Home></Home>,
-                errorElement:<Error></Error>,
+               
                 loader : ()=> fetch('/public/data.json')
             },
             {
